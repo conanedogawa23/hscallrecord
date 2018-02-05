@@ -1,7 +1,12 @@
 doctype html
 html
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    block title
+      title The title
+    link(href='/css/main.css', rel='stylesheet', type='text/css')
   body
-    block content
+    #content
+      block content
+    block footer
+      footer
+        span Copyright %year% 
