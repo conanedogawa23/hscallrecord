@@ -1,7 +1,6 @@
-const jwt = require('jsonwebtoken');
-
-const createToken = (user)=> {
-    let secretKey = 'Your secretKey';
+const jwt = require('jsonwebtoken'),
+    secretKey = 'Your secretKey';
+const createToken = (user)=> { 
     let token = jwt.sign({
         firstname: user[0].firstname,
         username: user[0].username,
@@ -11,5 +10,6 @@ const createToken = (user)=> {
 };
 
 module.exports = {
-    createToken
+    createToken,
+    secretKey
 };
