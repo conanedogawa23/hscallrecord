@@ -1,4 +1,5 @@
-const mysql = require('mysql');
+const mysql = require('mysql'),
+    bcrypt = require('bcryptjs');
 
 const connectsql = mysql.createConnection({
   host: "localhost",
@@ -7,6 +8,11 @@ const connectsql = mysql.createConnection({
   database: "mycalldb"
 });
 
+// const hashing = (password, next)=> {
+//     bcrypt.hash(password, 10).then((hash)=> {
+//         password = hash;
+//     }).catch((err)=> console.log(err));
+// };
 const adminSignup = (req, res, next)=> {
     
     connectsql.connect(function(err){
@@ -18,25 +24,36 @@ const adminSignup = (req, res, next)=> {
         lastname = req.body.lastname,
         empid = req.body.id,
         phoneno = req.body.phone,
-        status = 'y',
-        created_at = Date.now(),
-        updated_at = Date.now();
-        let adminData = {
-            username: username,
-            password: password,
-            firstname: firstname,
-            lastname: lastname,
-            empid: empid,
-            phoneno: phoneno,
-            status: status,
-            created_at: created_at,
-            updated_at: updated_at
-        };
-        console.log(adminData);
-        let query = "INSERT INTO ";
-        res.status(200).send({
-            success: true
+        status = 'y';
+
+        bcrypt.hash(password, 10).then((hash)=> {
+            password = hash;
+            let adminData = [
+                [firstname,
+                phoneno,
+                empid,
+                username,
+                lastname,
+                password,
+                status]
+            ];
+            console.log(adminData);
+            let sql = "INSERT INTO admin (firstname, phoneno, empid, username, lastname, password, status) VALUES ?";
+            // sql = "CREATE TABLE admin (firstname VARCHAR(50) NOT NULL, phoneno VARCHAR(15) NOT NULL, empid VARCHAR(20) NOT NULL PRIMARY KEY, username VARCHAR(20) NOT NULL, lastname VARCHAR(50) NOT NULL, password VARCHAR(100) NOT NULL, created_at TIMESTAMP NOT NULL, updated_at TIMESTAMP, status CHAR(1) NOT NULL)"
+            connectsql.query(sql, [adminData],(err, result)=> {
+                if(err) return err;
+                console.log(result);
+                res.status(200).send({
+                    success: true
+                });
+            });
         });
+        // let hashedPwd = hashing(password);
+        // console.log(hashedPwd);
+        // bcrypt.hash(password, 10).then((hash)=> {
+        //     password = hash;
+        //     console.log(password);
+        // }).catch((err)=> console.log(err));
     });
 };
 

@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+const jwt = require('jsonwebtoken');
 // const app = require('../app');
 // console.log(app.app);
 const adminRegister = require('./admin/adminRegister'),
