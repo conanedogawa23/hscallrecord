@@ -2,7 +2,8 @@ var express = require('express');
 var router = express.Router();
 // const app = require('../app');
 // console.log(app.app);
-const adminRegister = require('./admin/adminRegister');
+const adminRegister = require('./admin/adminRegister'),
+    adminLogin = require('./admin/adminLogin');
 
 
 /* GET home page. */
@@ -15,6 +16,8 @@ router.post('/',(req, res, next)=> {
 });
 
 router.post('/register', adminRegister.adminSignup);
+
+router.post('/login', adminLogin.adminSignin);
 
 router.get('/',(req, res, next)=> {
     console.log("get call");
