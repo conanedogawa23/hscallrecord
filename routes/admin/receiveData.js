@@ -1,5 +1,3 @@
-import { connect } from "http2";
-
 const retrieveData = (req, res, next)=> {
     console.log(req.files);
     console.log(req.body);
