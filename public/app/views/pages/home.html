@@ -1,4 +1,15 @@
 <div ng-controller="MainController as main">
-    <h1>in home.html page</h1>
-    <p> {{ main.value }} </p>
+    <h1> {{main.value}} </h1>
+    <form method="post" class="form-signin" ng-submit="main.login()">
+        <md-input-container class="md-block">
+            <label>Username</label>
+            <input aria-label="Username" name="username" ng-model="main.username">
+        </md-input-container>
+        <md-input-container  class="md-block">
+            <label>Password</label>
+            <input type="password" aria-label="password" name="Password" ng-model="main.password">
+        </md-input-container>
+        <md-button type="submit" class="md-warn md-hue-2 md-raised">Login</md-button>
+    </form>
+    <md-button type="btn btn-sm" class="md-warn md-raised" ng-click="main.logout()">Logout</md-button>
 </div>

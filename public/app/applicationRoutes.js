@@ -8,6 +8,11 @@ angular.module('route', ['ngRoute'])
             controller: "MainController",
             controllerAs: "main"
         })
+        .when('/profile', {
+            templateUrl: "/app/views/pages/profile.html",
+            controller: "ProfileController",
+            controllerAs: "profile"
+        })
     })
     // .config(['$httpProvider', function($httpProvider) {  
     // 	$httpProvider.interceptors.push('AuthInterceptor');

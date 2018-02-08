@@ -1,13 +1,6 @@
 const mysql = require('mysql'),
     bcrypt = require('bcryptjs');
 
-const connectsql = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "",
-  database: "mycalldb"
-});
-
 // const hashing = (password, next)=> {
 //     bcrypt.hash(password, 10).then((hash)=> {
 //         password = hash;
@@ -15,6 +8,13 @@ const connectsql = mysql.createConnection({
 // };
 const adminSignup = (req, res, next)=> {
     
+    const connectsql = mysql.createConnection({
+        host: "localhost",
+        user: "root",
+        password: "",
+        database: "mycalldb"
+    });
+
     connectsql.connect(function(err){
         if(err) return err;
         console.log('connected!');

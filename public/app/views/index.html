@@ -9,16 +9,28 @@
 <html ng-app="callrec">
   <head>
     <title>testing</title>
+    <!-- Css modules -->
+    <link rel="stylesheet" href="/node_modules/angular-material/angular-material.css">
+
+
     <!-- Angular modules -->
     <script src="/node_modules/angular/angular.js"></script>
     <script src="/node_modules/angular-route/angular-route.js"></script>
-    
+    <script src="/node_modules/angular-aria/angular-aria.js"></script> 
+    <script src="/node_modules/angular-animate/angular-animate.js"></script> 
+    <script src="/node_modules/angular-material/angular-material.js"></script>
+    <script src="/node_modules/angular-messages/angular-messages.js"></script>
+
     <!-- Custom files  -->
     <script src="/app/applicationAngular.js"></script>
     <script src="/app/applicationRoutes.js"></script>
 
+    <!-- Services -->
+    <script src="/app/services/authService.js"></script>
+
     <!-- Controllers -->
     <script src="/app/controllers/mainController.js"></script>
+    <script src="/app/controllers/profileController.js"></script>
   </head>
   <body>
     {{ 2+2 }}

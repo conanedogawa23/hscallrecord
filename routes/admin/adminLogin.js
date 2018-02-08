@@ -2,21 +2,21 @@ const mysql = require('mysql'),
     tokenAuth = require('./createToken'),
     bcrypt = require('bcryptjs');
 
-const connectsql = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "",
-  database: "mycalldb"
-});
-
 const comparePwd = (password, authPwd)=> {
     return bcrypt.compareSync(password, authPwd[0].password)
 };
 
 const adminSignin = (req, res, next)=> {
+    const connectsql = mysql.createConnection({
+        host: "localhost",
+        user: "root",
+        password: "",
+        database: "mycalldb"
+    });
 
     connectsql.connect((err)=> {
         if(err) return err;
+        console.log(req.body);
         let username = req.body.username,
         password = req.body.password;
 
@@ -34,8 +34,8 @@ const adminSignin = (req, res, next)=> {
                         token: auth
                     });
                 } else {
-                    res.status(200).send({
-                        success: true,
+                    res.status(404).send({
+                        success: false,
                         message: 'password didnt match'
                     });
                 }
