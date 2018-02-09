@@ -1,7 +1,9 @@
+const mysql = require('mysql');
+
 const retrieveData = (req, res, next)=> {
     console.log(req.files);
     console.log(req.body);
-    const connectFetchData = mysql.createConnection({
+    let connectFetchData = mysql.createConnection({
         host: "localhost",
         user: "root",
         password: "",

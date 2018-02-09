@@ -4,16 +4,28 @@
     <form method="post" class="form-signin" ng-submit="profile.sendData()">
         <md-input-container class="md-block">
             <label>Executive number</label>
-            <input aria-label="executive" name="execno" ng-model="profile.dataSending.executive">
+            <input aria-label="executive" name="execno" ng-model="profile.dataSending.executiveNumber">
         </md-input-container>
         <md-input-container  class="md-block">
             <label>Imei</label>
             <input type="text" aria-label="imei" name="imei" ng-model="profile.dataSending.imei">
         </md-input-container>
+        <md-input-container  class="md-block">
+            <label>Location</label>
+            <input type="text" aria-label="location" name="location" ng-model="profile.dataSending.location">
+        </md-input-container>
+        <md-input-container  class="md-block">
+            <label>Customer number</label>
+            <input type="text" aria-label="customer" name="custno" ng-model="profile.dataSending.customerNumber">
+        </md-input-container>
+        <md-input-container  class="md-block">
+            <label>Time duration</label>
+            <input type="text" aria-label="time" name="time" ng-model="profile.dataSending.time">
+        </md-input-container>
+        <div>
+            <input type="file" id="file" ng-model="profile.dataSending.data" onchange="angular.element(this).scope().imageUpload(event)" multiple/>
+            <!-- <md-button type="submit" class="md-warn md-raised" ng-click="profile.fileGet()">Send Image</md-button> -->
+        </div>
         <md-button type="submit" class="md-warn md-hue-2 md-raised">Send Data</md-button>
     </form>
-    <div>
-        <input type="file" id="file"  multiple accept="image/*" onchange="profile.handleFiles(this.files)">
-        <!-- <md-button type="submit" class="md-warn md-raised" ng-click="profile.fileGet()">Send Image</md-button> -->
-    </div>
 </div>

@@ -12,7 +12,7 @@ angular.module('route', ['ngRoute'])
             templateUrl: "/app/views/pages/profile.html",
             controller: "ProfileController",
             controllerAs: "profile"
-        })
+        });
     })
     // .config(['$httpProvider', function($httpProvider) {  
     // 	$httpProvider.interceptors.push('AuthInterceptor');

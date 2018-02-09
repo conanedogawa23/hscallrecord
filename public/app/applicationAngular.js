@@ -1,6 +1,6 @@
 console.log('in app js');
 
-angular.module("callrec",[`route`, `mainCtrl`, `profileCtrl`, `ngMaterial`, `authService`])
+angular.module("callrec",[`route`, `mainCtrl`, `profileCtrl`, `ngMaterial`, `authService`, `profileService`])
     .config(function($mdThemingProvider){
         $mdThemingProvider
             .theme('default')

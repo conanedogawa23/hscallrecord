@@ -41,11 +41,10 @@ const index = require('./routes/index'),
 // app.set('view engine', 'ejs');
 
 app.use(cors());
-app.use(logger('dev'));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+// app.use(bodyParser({limit: '50mb'}));
 app.use(busboyBodyParser({ limit: '10mb' }));
-app.use(cookieParser());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/node_modules', express.static(__dirname + '/node_modules'))
 app.get('/', function (req, res) {
