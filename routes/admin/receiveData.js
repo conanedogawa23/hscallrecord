@@ -13,11 +13,10 @@ const retrieveData = (req, res, next)=> {
     connectFetchData.connect((err)=> {
         if(err) return err;
 
-        let sql = "SELECT * FROM datareceived";
-        // let fetchedResults = [[
+        let sql = "SELECT * FROM datarec WHERE location = ?";
         //     imei, executiveno, audio, location, time, customerno
         // ]];
-        connectFetchData.query(sql, (err, result)=> {
+        connectFetchData.query(sql, [req.body.location], (err, result)=> {
 
             console.log(result);
             res.status(200).send({
