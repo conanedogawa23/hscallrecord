@@ -6,28 +6,12 @@ const express = require('express'),
   bodyParser = require('body-parser'),
   app = express(),
   mysql = require('mysql'),
+  multer = require('multer'),
   busboyBodyParser = require('busboy-body-parser'),
   cors = require('cors');
 
 const index = require('./routes/index'),
   users = require('./routes/users');
-
-// var con = mysql.createConnection({
-//   host: "localhost",
-//   user: "root",
-//   password: "",
-//   database: "mycalldb"
-// });
-
-// con.connect(function(err) {
-//   if (err) throw err;
-//   console.log("Connected!");
-//   // let sql = "CREATE TABLE admin (firstname VARCHAR(50) NOT NULL, phoneno VARCHAR(15) NOT NULL, empid VARCHAR(20) NOT NULL PRIMARY KEY, username VARCHAR(20) NOT NULL, lastname VARCHAR(50) NOT NULL, password VARCHAR(100) NOT NULL, created_at TIMESTAMP NOT NULL, updated_at TIMESTAMP, status CHAR(1) NOT NULL)"
-//   // con.query(sql, (err, result)=> {
-//   //   if (err) throw err;
-//   //   console.log("table created");
-//   // });
-// });
 
 // view engine setup
 // app.set('views', path.join(__dirname, 'views'));
@@ -42,9 +26,9 @@ const index = require('./routes/index'),
 
 app.use(cors());
 // app.use(bodyParser({limit: '50mb'}));
-app.use(busboyBodyParser({ limit: '10mb' }));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(busboyBodyParser({ limit: '10mb' }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/node_modules', express.static(__dirname + '/node_modules'))
 app.get('/', function (req, res) {

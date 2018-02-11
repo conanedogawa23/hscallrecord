@@ -1,5 +1,6 @@
 const mysql = require('mysql'),
-    bcrypt = require('bcryptjs');
+    bcrypt = require('bcryptjs'),
+    moment = require('moment');
 
 // const hashing = (password, next)=> {
 //     bcrypt.hash(password, 10).then((hash)=> {
@@ -35,13 +36,33 @@ const adminSignup = (req, res, next)=> {
                 username,
                 lastname,
                 password,
+                created_at = moment().format('YYYY-MM-DD HH:mm:ss'),
+                updated_at = moment().format('YYYY-MM-DD HH:mm:ss'),
                 status]
             ];
             console.log(adminData);
-            let sql = "INSERT INTO admin (firstname, phoneno, empid, username, lastname, password, status) VALUES ?";
-            // sql = "CREATE TABLE admin (firstname VARCHAR(50) NOT NULL, phoneno VARCHAR(15) NOT NULL, empid VARCHAR(20) NOT NULL PRIMARY KEY, username VARCHAR(20) NOT NULL, lastname VARCHAR(50) NOT NULL, password VARCHAR(100) NOT NULL, created_at TIMESTAMP NOT NULL, updated_at TIMESTAMP, status CHAR(1) NOT NULL)"
+            let values = [[
+              username,
+              firstname  
+            ]];
+            let sql = "INSERT INTO admin (firstname, phoneno, empid, username, lastname, password, created_at, updated_at, status) VALUES ?";
+            // "INSERT INTO admin (firstname, phoneno, empid, username, lastname, password, created_at, updated_at, status) VALUES ?";
+            // "CREATE TABLE admin (firstname VARCHAR(50) NOT NULL, phoneno VARCHAR(15) NOT NULL, empid VARCHAR(20) NOT NULL PRIMARY KEY, username VARCHAR(20) NOT NULL, lastname VARCHAR(50) NOT NULL, password VARCHAR(100) NOT NULL, created_at TIMESTAMP, updated_at TIMESTAMP, status CHAR(1) NOT NULL)";
+            // "INSERT INTO admin (firstname, phoneno, empid, username, lastname, password, status) VALUES ?";
+            // "CREATE TABLE admin (firstname VARCHAR(50) NOT NULL, phoneno VARCHAR(15) NOT NULL, empid VARCHAR(20) NOT NULL PRIMARY KEY, username VARCHAR(20) NOT NULL, lastname VARCHAR(50) NOT NULL, password VARCHAR(100) NOT NULL, created_at TIMESTAMP NOT NULL, updated_at TIMESTAMP, status CHAR(1) NOT NULL)";
+            // "INSERT INTO admin (firstname, phoneno, empid, username, lastname, password, status) VALUES ?";
+            // "INSERT INTO trail (value, test) VALUES ?";
+            // "CREATE TABLE trail (value VARCHAR(20), test VARCHAR(20))";
+            // "INSERT INTO admin (firstname, phoneno, empid, username, lastname, password, status) VALUES ?";
+            // "CREATE TABLE admin (firstname VARCHAR(50) NOT NULL, phoneno VARCHAR(15) NOT NULL, empid VARCHAR(20) NOT NULL PRIMARY KEY, username VARCHAR(20) NOT NULL, lastname VARCHAR(50) NOT NULL, password VARCHAR(100) NOT NULL, status CHAR(1) NOT NULL)";
+            // "INSERT INTO admin (firstname, phoneno, empid, username, lastname, password, status) VALUES ?";
+            // "CREATE TABLE admin (firstname VARCHAR(50) NOT NULL, phoneno VARCHAR(15) NOT NULL, empid VARCHAR(20) NOT NULL PRIMARY KEY, username VARCHAR(20) NOT NULL, lastname VARCHAR(50) NOT NULL, password VARCHAR(100) NOT NULL, status CHAR(1) NOT NULL)" 
+            // "INSERT INTO admin (firstname, phoneno, empid, username, lastname, password, created_at, updated_at, status) VALUES ?";
+            // console.log(sql);
+            // let sql = "INSERT INTO test (value) VALUES ('test value')"
+            // "CREATE TABLE testing (value JSON)";
             connectsql.query(sql, [adminData],(err, result)=> {
-                if(err) return err;
+                if(err) console.log(err);
                 console.log(result);
                 res.status(200).send({
                     success: true

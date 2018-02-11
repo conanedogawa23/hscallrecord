@@ -2,8 +2,8 @@ const mysql = require('mysql'),
     tokenAuth = require('./createToken'),
     bcrypt = require('bcryptjs');
 
-const comparePwd = (password, authPwd)=> {
-    return bcrypt.compareSync(password, authPwd[0].password)
+const comparePwd = (pass, authPwd)=> {
+    return bcrypt.compareSync(pass, authPwd[0].password)
 };
 
 const adminSignin = (req, res, next)=> {
@@ -27,6 +27,7 @@ const adminSignin = (req, res, next)=> {
             if(err) {
                 console.log('wrong username');
             } else{
+                console.log(result);
                 if(comparePwd(password, result)) {
                     let auth = tokenAuth.createToken(result);
                     res.status(200).send({

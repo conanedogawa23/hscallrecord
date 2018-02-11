@@ -1,7 +1,8 @@
 var express = require('express');
 var router = express.Router();
 const jwt = require('jsonwebtoken'),
-    cors = require('cors');
+	cors = require('cors'),
+	multer = require('multer');
     tokenAuth = require('./admin/createToken');
 // const app = require('../app');
 // console.log(app.app);
@@ -59,7 +60,6 @@ router.use((req, res, next)=> {
 //         message: 'get call'
 //     });
 // });
-
 router.post('/fetchData', dataFromApi.getData);
 
 router.post('/receiveData', dataFromDevice.retrieveData);

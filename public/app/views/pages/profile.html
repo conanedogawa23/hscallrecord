@@ -18,10 +18,6 @@
             <label>Customer number</label>
             <input type="text" aria-label="customer" name="custno" ng-model="profile.dataSending.customerNumber">
         </md-input-container>
-        <md-input-container  class="md-block">
-            <label>Time duration</label>
-            <input type="text" aria-label="time" name="time" ng-model="profile.dataSending.time">
-        </md-input-container>
         <div>
             <input type="file" id="file" ng-model="profile.dataSending.data" onchange="angular.element(this).scope().imageUpload(event)" multiple/>
             <!-- <md-button type="submit" class="md-warn md-raised" ng-click="profile.fileGet()">Send Image</md-button> -->

@@ -8,6 +8,8 @@ angular.module('profileCtrl',['profileService'])
         vm.dataSending = {};
         $scope.imageUpload = (event)=> {
             vm.file = event.target.files[0];
+            vm.dataSending.time = vm.file.lastModifiedDate;
+            console.log(vm.dataSending.time);
             // let formdata = new FormData();
 
             // formdata.append('file', files);
