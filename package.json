@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": false,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "nodemon ./bin/www",
+    "restart": "pm2 startOrRestart ecosystem.config.js",
+    "deploy": "pm2 deploy ecosystem.config.js production",
   },
   "dependencies": {
     "angular": "^1.6.7",
