@@ -41,12 +41,12 @@ const getData = (req, res, next)=> {
                 if (err) return console.log(err);
                 console.log('Your file is ' + duration + ' seconds long');
             
-                let customerno = "req.body.cust",
-                    executiveno = "req.body.exec",
-                    imeiCode = "req.body.imei",
+                let customerno = req.body.cust,
+                    executiveno = req.body.exec,
+                    imeiCode = req.body.imei,
                     dateTime = time,
                     durationCall = `${duration}`,
-                    location = "req.body.location",
+                    location = req.body.location,
                     audioPath = `${path}`; 
 
                 let dataReceived = [
