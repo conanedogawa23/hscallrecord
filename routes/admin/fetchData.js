@@ -71,7 +71,7 @@ const getData = (req, res, next)=> {
                 // "INSERT INTO datarec VALUES ?";
                 // "CREATE TABLE datarec (customernumber VARCHAR(20) NOT NULL, executivenumber VARCHAR(20) NOT NULL, imeicode VARCHAR(20) NOT NULL, datetime TIMESTAMP, durationcall VARCHAR(20), location VARCHAR(20) NOT NULL, audiopath VARCHAR(75) NOT NULL)"
                 
-                connectFetchData.query(sql, [dataReceived], (err, result)=> {
+                connectFetchData.query(sql, (err, result)=> {
                     if (err) return err;
                     console.log(result);
                 });
