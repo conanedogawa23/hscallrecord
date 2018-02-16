@@ -12,7 +12,7 @@ const retrieveData = (req, res, next)=> {
     
     connectFetchData.connect((err)=> {
         if(err) return err;
-
+        console.log('connected');
         let sql = "SELECT * FROM datarec WHERE location = ?";
         //     imei, executiveno, audio, location, time, customerno
         // ]];
