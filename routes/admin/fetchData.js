@@ -8,8 +8,8 @@ const getData = (req, res, next)=> {
 
     const connectFetchData = mysql.createConnection({
         host: "localhost",
-        user: "root",
-        password: "",
+        user: "phpmyadmin",
+        password: "mysql",
         database: "mycalldb"
     });
     

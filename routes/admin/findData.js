@@ -3,8 +3,8 @@ const mysql = require('mysql');
 const findData = (req, res, next)=> {
     let connectFindData = mysql.createConnection({
         host: "localhost",
-        user: "root",
-        password: "",
+        user: "phpmyadmin",
+        password: "mysql",
         database: "mycalldb"
     });
     

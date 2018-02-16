@@ -5,8 +5,8 @@ const retrieveData = (req, res, next)=> {
     console.log(req.body);
     let connectFetchData = mysql.createConnection({
         host: "localhost",
-        user: "root",
-        password: "",
+        user: "phpmyadmin",
+        password: "mysql",
         database: "mycalldb"
     });
     
