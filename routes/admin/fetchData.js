@@ -63,7 +63,7 @@ const getData = (req, res, next)=> {
 
             //     console.log(dataReceived);
 
-                let sql = "CREATE TABLE datarec (customernumber VARCHAR(20) NOT NULL, executivenumber VARCHAR(20) NOT NULL, imeicode VARCHAR(20) NOT NULL, datetime TIMESTAMP NOT NULL, durationcall VARCHAR(20), location VARCHAR(20) NOT NULL, audiopath VARCHAR(100) NOT NULL, created_at TIMESTAMP)";
+                let sql = "CREATE TABLE datarec (customernumber VARCHAR(20) NOT NULL, executivenumber VARCHAR(20) NOT NULL, imeicode VARCHAR(20) NOT NULL, datetime TIMESTAMP NOT NULL, durationcall VARCHAR(20), location VARCHAR(20) NOT NULL, audiopath VARCHAR(100) NOT NULL, created_at TIMESTAMP NULL DEFAULT NULL)";
                 // "INSERT INTO datarec VALUES ?";
                 // 
                 // 
