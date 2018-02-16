@@ -41,11 +41,12 @@ const adminSignup = (req, res, next)=> {
                 status]
             ];
             console.log(adminData);
-            let values = [[
-              username,
-              firstname  
-            ]];
-            let sql = "CREATE TABLE admin (firstname VARCHAR(50) NOT NULL, phoneno VARCHAR(15) NOT NULL, empid VARCHAR(20) NOT NULL PRIMARY KEY, username VARCHAR(20) NOT NULL, lastname VARCHAR(50) NOT NULL, password VARCHAR(100) NOT NULL, created_at TIMESTAMP, updated_at TIMESTAMP NULL DEFAULT NULL, status CHAR(1) NOT NULL)";
+            // let values = [[
+            //   username,
+            //   firstname  
+            // ]];
+            let sql = "INSERT INTO admin (firstname, phoneno, empid, username, lastname, password, created_at, updated_at, status) VALUES ?";
+            // "CREATE TABLE admin (firstname VARCHAR(50) NOT NULL, phoneno VARCHAR(15) NOT NULL, empid VARCHAR(20) NOT NULL PRIMARY KEY, username VARCHAR(20) NOT NULL, lastname VARCHAR(50) NOT NULL, password VARCHAR(100) NOT NULL, created_at TIMESTAMP, updated_at TIMESTAMP NULL DEFAULT NULL, status CHAR(1) NOT NULL)";
             // "INSERT INTO admin (firstname, phoneno, empid, username, lastname, password, created_at, updated_at, status) VALUES ?";
             // "INSERT INTO admin (firstname, phoneno, empid, username, lastname, password, created_at, updated_at, status) VALUES ?";
             // "CREATE TABLE admin (firstname VARCHAR(50) NOT NULL, phoneno VARCHAR(15) NOT NULL, empid VARCHAR(20) NOT NULL PRIMARY KEY, username VARCHAR(20) NOT NULL, lastname VARCHAR(50) NOT NULL, password VARCHAR(100) NOT NULL, created_at TIMESTAMP, updated_at TIMESTAMP, status CHAR(1) NOT NULL)";

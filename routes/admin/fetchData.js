@@ -8,8 +8,8 @@ const getData = (req, res, next)=> {
 
     const connectFetchData = mysql.createConnection({
         host: "localhost",
-        user: "phpmyadmin",
-        password: "mysql",
+        user: "root",
+        password: "",
         database: "mycalldb"
     });
     
@@ -23,48 +23,49 @@ const getData = (req, res, next)=> {
             // let a = JSON.parse(JSON.stringify(req.files.files));
             // let a = JSON.stringify(req.files.files);
             // console.log(a);
-            // console.log(req.files);
-            // console.log(req.body);
-            // let time = moment(req.body.time).format('YYYY-MM-DD HH:mm:ss');
-            // console.log(time);
+            console.log(req.files);
+            console.log(req.body);
+            let time = moment(req.body.time).format('YYYY-MM-DD HH:mm:ss');
+            console.log(time);
 
-            // try {
-            //     fs.writeFileSync(__dirname+`/audio/${req.files.files.name}`);
-            // } catch(err) {
-            //     console.log(err);
-            // }          
+            try {
+                fs.writeFileSync(__dirname+`/audio/${req.files.files.name}`);
+            } catch(err) {
+                console.log(err);
+            }          
             
-            // let path = __dirname+`/audio/${req.files.files.name}`;
-            // console.log(path);
+            let path = __dirname+`/audio/${req.files.files.name}`;
+            console.log(path);
 
-            // duration(req.files.files.data, function (err, duration) {
-            //     if (err) return console.log(err);
-            //     console.log('Your file is ' + duration + ' seconds long');
+            duration(req.files.files.data, function (err, duration) {
+                if (err) return console.log(err);
+                console.log('Your file is ' + duration + ' seconds long');
             
-            //     let customerno = req.body.cust,
-            //         executiveno = req.body.exec,
-            //         imeiCode = req.body.imei,
-            //         dateTime = time,
-            //         durationCall = `${duration}`,
-            //         location = req.body.location,
-            //         audioPath = `${path}`; 
+                let customerno = "req.body.cust",
+                    executiveno = "req.body.exec",
+                    imeiCode = "req.body.imei",
+                    dateTime = time,
+                    durationCall = `${duration}`,
+                    location = "req.body.location",
+                    audioPath = `${path}`; 
 
-            //     let dataReceived = [
-            //         [
-            //             customerno,
-            //             executiveno,
-            //             imeiCode,
-            //             dateTime,
-            //             durationCall,
-            //             location,
-            //             audioPath,
-            //             created_at = moment().format('YYYY-MM-DD HH:mm:ss')
-            //         ]
-            //     ];
+                let dataReceived = [
+                    [
+                        customerno,
+                        executiveno,
+                        imeiCode,
+                        dateTime,
+                        durationCall,
+                        location,
+                        audioPath,
+                        // created_at = moment().format('YYYY-MM-DD HH:mm:ss')
+                    ]
+                ];
 
-            //     console.log(dataReceived);
+                console.log(dataReceived);
 
-                let sql = "CREATE TABLE datarec (customernumber VARCHAR(20) NOT NULL, executivenumber VARCHAR(20) NOT NULL, imeicode VARCHAR(20) NOT NULL, datetime TIMESTAMP, durationcall VARCHAR(20), location VARCHAR(20) NOT NULL, audiopath VARCHAR(100) NOT NULL)";
+                let sql = "INSERT INTO datarec VALUES ?";
+                // "CREATE TABLE datarec (customernumber VARCHAR(20) NOT NULL, executivenumber VARCHAR(20) NOT NULL, imeicode VARCHAR(20) NOT NULL, datetime TIMESTAMP, durationcall VARCHAR(20), location VARCHAR(20) NOT NULL, audiopath VARCHAR(100) NOT NULL)";
                 // , executivenumber VARCHAR(20) NOT NULL, imeicode VARCHAR(20) NOT NULL, datetime TIMESTAMP, durationcall VARCHAR(20), location VARCHAR(20) NOT NULL, audiopath VARCHAR(100) NOT NULL)";
                 // "INSERT INTO datarec VALUES ?";
                 // 
@@ -73,11 +74,11 @@ const getData = (req, res, next)=> {
                 // "INSERT INTO datarec VALUES ?";
                 // "CREATE TABLE datarec (customernumber VARCHAR(20) NOT NULL, executivenumber VARCHAR(20) NOT NULL, imeicode VARCHAR(20) NOT NULL, datetime TIMESTAMP, durationcall VARCHAR(20), location VARCHAR(20) NOT NULL, audiopath VARCHAR(75) NOT NULL)"
                 console.log(sql);
-                connectFetchData.query(sql, (err, result)=> {
+                connectFetchData.query(sql, [dataReceived], (err, result)=> {
                     if (err) return err;
                     console.log(result);
                 });
-            // });
+            });
             // console.log(req.files.files);  
             // 
 
