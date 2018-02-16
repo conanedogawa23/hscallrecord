@@ -18,6 +18,7 @@ const getData = (req, res, next)=> {
             console.log('error in connection');
             console.log(err);
         } else {
+            console.log('in query');
             //
             // let a = JSON.parse(JSON.stringify(req.files.files));
             // let a = JSON.stringify(req.files.files);
@@ -63,14 +64,15 @@ const getData = (req, res, next)=> {
 
             //     console.log(dataReceived);
 
-                let sql = "CREATE TABLE datarec (customernumber VARCHAR(20) NOT NULL, executivenumber VARCHAR(20) NOT NULL, imeicode VARCHAR(20) NOT NULL, datetime TIMESTAMP NOT NULL, durationcall VARCHAR(20), location VARCHAR(20) NOT NULL, audiopath VARCHAR(100) NOT NULL, created_at TIMESTAMP NULL DEFAULT NULL)";
+                let sql = "CREATE TABLE datarec (customernumber VARCHAR(20) NOT NULL, executivenumber VARCHAR(20) NOT NULL, imeicode VARCHAR(20) NOT NULL, datetime TIMESTAMP, durationcall VARCHAR(20), location VARCHAR(20) NOT NULL, audiopath VARCHAR(100) NOT NULL)";
+                // , executivenumber VARCHAR(20) NOT NULL, imeicode VARCHAR(20) NOT NULL, datetime TIMESTAMP, durationcall VARCHAR(20), location VARCHAR(20) NOT NULL, audiopath VARCHAR(100) NOT NULL)";
                 // "INSERT INTO datarec VALUES ?";
                 // 
                 // 
                 // "CREATE TABLE datarec (customernumber VARCHAR(20) NOT NULL, executivenumber VARCHAR(20) NOT NULL, imeicode VARCHAR(20) NOT NULL, datetime TIMESTAMP, durationcall VARCHAR(20), location VARCHAR(20) NOT NULL, audiopath VARCHAR(75) NOT NULL, created_at TIMESTAMP)"
                 // "INSERT INTO datarec VALUES ?";
                 // "CREATE TABLE datarec (customernumber VARCHAR(20) NOT NULL, executivenumber VARCHAR(20) NOT NULL, imeicode VARCHAR(20) NOT NULL, datetime TIMESTAMP, durationcall VARCHAR(20), location VARCHAR(20) NOT NULL, audiopath VARCHAR(75) NOT NULL)"
-                
+                console.log(sql);
                 connectFetchData.query(sql, (err, result)=> {
                     if (err) return err;
                     console.log(result);
