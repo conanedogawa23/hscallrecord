@@ -17,7 +17,7 @@ const retrieveData = (req, res, next)=> {
         //     imei, executiveno, audio, location, time, customerno
         // ]];
         connectFetchData.query(sql, [req.body.location], (err, result)=> {
-
+            if (err) return err;
             console.log(result);
             res.status(200).send({
                 message: 'successful',
