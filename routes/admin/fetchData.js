@@ -58,7 +58,7 @@ const getData = (req, res, next)=> {
                         durationCall,
                         location,
                         audioPath,
-                        // created_at = moment().format('YYYY-MM-DD HH:mm:ss')
+                        created_at = moment().format('YYYY-MM-DD HH:mm:ss')
                     ]
                 ];
 
