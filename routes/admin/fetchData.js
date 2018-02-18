@@ -27,7 +27,6 @@ const getData = (req, res, next)=> {
             console.log(req.body);
             let time = moment(req.body.time).format('YYYY-MM-DD HH:mm:ss');
             console.log(time);
-
             try {
                 fs.writeFileSync(__dirname+`/audio/${req.files.files.name}`);
             } catch(err) {
