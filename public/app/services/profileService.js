@@ -37,7 +37,7 @@ angular.module('profileService', [])
             let url = `/index/fetchData?token=${tokenAuth}`
             console.log(url);
             // let val = {a:'a', file};
-            return $http.post(url, file, { transformRequest: angular.identity }).then((data)=>{
+            return $http.post(url, file, { transformRequest: angular.identity, headers: {'Content-Type': undefined} }).then((data)=>{
                 console.log(data);
                 return data;
             }).catch((err)=> {
