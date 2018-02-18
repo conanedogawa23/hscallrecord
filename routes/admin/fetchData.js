@@ -12,6 +12,7 @@ const getData = (req, res, next)=> {
         password: "mysql",
         database: "mycalldb"
     });
+    
     //
     connectFetchData.connect((err)=> {
         if(err) {
