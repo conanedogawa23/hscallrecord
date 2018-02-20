@@ -3,8 +3,8 @@ const mysql = require('mysql');
 const retrieveData = (req, res, next)=> {
     let connectFetchData = mysql.createConnection({
         host: "localhost",
-        user: "root",
-        password: "",
+        user: "phpmyadmin",
+        password: "mysql",
         database: "mycalldb"
     });
     
