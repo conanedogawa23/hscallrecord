@@ -12,6 +12,11 @@ angular.module('route', ['ngRoute'])
             templateUrl: "/app/views/pages/profile.html",
             controller: "ProfileController",
             controllerAs: "profile"
+        })
+        .when('/receive', {
+            templateUrl: "/app/views/pages/receive.html",
+            controller: "ReceiveController",
+            controllerAs: "receive"
         });
     })
     // .config(['$httpProvider', function($httpProvider) {  

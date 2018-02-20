@@ -8,8 +8,8 @@ const getData = (req, res, next)=> {
 
     const connectFetchData = mysql.createConnection({
         host: "localhost",
-        user: "phpmyadmin",
-        password: "mysql",
+        user: "root",
+        password: "",
         database: "mycalldb"
     });
 
@@ -35,7 +35,7 @@ const getData = (req, res, next)=> {
                 console.log(err);
             }          
             
-            let path = __dirname+'`/audio/${req.files.files.name}`';
+            let path = __dirname+`/audio/${req.files.files.name}`;
             console.log(path);
 
             duration(req.files.files.data, function (err, duration) {

@@ -1,27 +1,3 @@
-// angular.module('profileService', [])
-//     .factory('ProfileData')
-
-//     function ProfileData ($http, $q){
-//         const dataSentFromApi = {};
-
-//         dataSentFromApi.sendDataToApi = (file, data, $window)=> {
-//             let tokenAuth = $window.localStorage.getItem('token');
-//             console.log(tokenAuth);
-//             console.log("data is received : "+data);
-//             let url = "/index/fetchData"
-//             return http.post(url, {
-//                 file, data
-//             }).then((data)=> {
-//                 console.log(data);
-//                 return data.data;
-//             }).catch((err)=> {
-//                 console.log(err);
-//             });
-//         };
-
-//         return dataSentFromApi;
-//     };
-
 angular.module('profileService', [])
     .factory('Profiledata', Profiledata);
 
