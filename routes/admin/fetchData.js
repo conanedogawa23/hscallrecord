@@ -13,8 +13,6 @@ const getData = (req, res, next)=> {
         database: "mycalldb"
     });
 
-    
-    //
     connectFetchData.connect((err)=> {
         if(err) {
             console.log('error in connection');
