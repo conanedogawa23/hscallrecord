@@ -1,5 +1,9 @@
 <div>
     <md-button type="btn btn-sm" class="md-warn md-hue-2 md-raised" ng-click="receive.requestDataApi()">Get Data</md-button>
 </div>
-
-<div></div>
+<div ng-if="receive.status === true">
+    <audio controls>
+        <source src="receive.srcData" type="audio/ogg">
+        <source src="" type="audio/mpeg">  
+    </audio>
+</div>
