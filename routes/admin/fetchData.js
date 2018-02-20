@@ -37,7 +37,7 @@ const getData = (req, res, next)=> {
             console.log(path);
 
             duration(req.files.files.data, function (err, duration) {
-                if (err) return console.log(err);
+                if (err) console.log(err);
                 console.log('Your file is ' + duration + ' seconds long');
             
                 let customerno = req.body.cust,
