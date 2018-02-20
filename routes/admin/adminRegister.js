@@ -11,8 +11,8 @@ const adminSignup = (req, res, next)=> {
     
     const connectsql = mysql.createConnection({
         host: "localhost",
-        user: "root",
-        password: "",
+        user: "phpmyadmin",
+        password: "mysql",
         database: "mycalldb"
     });
 
