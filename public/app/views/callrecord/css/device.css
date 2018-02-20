@@ -1,0 +1,511 @@
+/* responsive css */
+
+@media only screen and (max-width: 767px) {
+	
+	
+	
+}
+	
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	
+	
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+	
+	
+	
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	
+	html, body { font-size: 9px; }
+	input, select, textarea { font-size: 9px; }
+	h3 { font-size: 19px; }
+	h3 span { font-size: 16px; }
+	
+	h6 { font-size: 11px; }
+	
+	a.editBtn { padding: 0px 10px; font-size: 9px; line-height: 26px; }
+	a.addBtn { padding: 0px 10px; font-size: 9px; line-height: 26px; }
+	a.addBtn:before { margin-right: 6px; content:'\f055'; font-family: Fontawesome; font-size: 9px; display: inline-block; vertical-align: middle; }
+	a.whiteBtn { padding: 0px 10px; font-size: 9px; line-height: 26px; }
+	a.whiteBtn:before { font-size: 15px; }
+	a.blackBtn { padding: 0px 10px; font-size: 9px; line-height: 26px; }
+	a.blackBtn:before { font-size: 9px; }
+	.saveBtn { font-size: 9px; }
+	a.cancelBtn { padding: 6px 10px; font-size: 9px; }
+	a.editBtn { padding: 0px 10px; font-size: 9px; line-height: 26px; }
+	a.editBtn:before { font-size: 10px; }	
+	.deleteBtn { padding: 0px 10px; font-size: 9px; line-height: 26px; }
+	
+	.listBox .pagignation { font-size: 10px; height: 30px; line-height: 22px; }
+	.listBox .select { height: 30px; }
+	.userBox li a { font-size: 9px; }
+	.searchBox .search { height: 30px; }
+	
+	.searchBox .fa-cog { font-size: 16px; }
+	.searchBox .cogTabs .tab-pane li .text { font-size: 9px; }
+	.searchBox .cogTabs .tab-pane li label { font-size: 9px; }
+	.searchBox .cogTabs .tab-pane li label span { width: 9px; height: 9px; }
+	.searchBox .cogTabs .tab-pane li label span::after { width: 9px; height: 5px; bottom: 3px; left: 2px; }
+	.searchBox .cogTabs .tab-pane li .number { font-size: 9px; }
+	
+	.modal-content { padding: 0px 0px 15px; }
+	
+	.formBox .leftSide .leftToggle::after { margin-right: 13px; }
+	.formBox .leftSide .blueBg li a { padding: 20px 12px 15px; min-width: 145px; }
+	.formBox .leftSide .blueBg li a i { font-size: 14px; }
+	.formBox .leftSide.active .blueBg li a em { width: 16px; height: 16px; line-height: 16px; font-size: 8px; }
+	.formBox .rightSide { padding-left: 15px; }
+	.formBox .rightSide .profileOverview .titles { padding: 7px 15px; }
+	.formBox .rightSide .profileOverview .titles h3 { margin: 7px 0px; }
+	.formBox .rightSide .profileOverview .img { width: 35px; height: 35px; }
+	.formBox .rightSide .profileOverview .img .fa { width: 18px; height: 18px; font-size: 9px; line-height: 18px; }
+	.formBox .rightSide .profileOverview .top { padding: 10px 10px 5px; }
+	.formBox .rightSide .profileOverview .top a.fa-heart { width: 29px; height: 29px; line-height: 27px; font-size: 13px; }
+	.formBox .rightSide .profileOverview .top .topCol { width: 34% !important; }
+	.formBox .rightSide .profileOverview .top .topCol ul li ul li a { font-size: 9px; }
+	.formBox .rightSide .profileOverview .profile li { padding: 4px 0px 4px 8px !important; }
+	.formBox .rightSide .profileOverview .profile li a { font-size: 7px !important; line-height: 12px !important; }
+	.formBox .rightSide .profileOverview .profile li a strong { width: 49% !important; font-size: 7px !important; }
+	.formBox .rightSide .profileOverview .profile li a > span { width: 51% !important; }
+	.formBox .rightSide .profileOverview .profile li a.clickMore strong::before { font-size: 7px; width: 8px; margin-left: -8px; }
+	.formBox .rightSide .profileOverview .profile li em { margin: 3px 0px 0px; font-size: 5px; }
+	.formBox .rightSide .profileOverview .profile li a img { max-width: 10px; max-height: 10px; }
+	.formBox .rightSide .profileOverview .profile li a span img { max-width: 10px; max-height: 10px; }
+	.formBox .rightSide .profileOverview .profile .item:nth-child(3) li .showMore li a img { margin-right: 2px; }
+	.formBox .rightSide .profileOverview .profile li .fa-minus-square { width: 11px; font-size: 9px; }
+	.formBox .rightSide .profileOverview .profile li .fa-plus-square { width: 11px; font-size: 9px; }
+	
+	.formBox .rightSide .profileOverview .profile .item:first-child li a strong { width: 31% !important; }
+	.formBox .rightSide .profileOverview .profile .item:first-child li a.clickMore + .showMore strong { width: 30% !important; }
+	.formBox .rightSide .profileOverview .profile .item:first-child li a > span { width: 68% !important; }
+	
+	.formBox .rightSide .profileOverview .profile .item:last-child li a strong { width: 32% !important; }
+	.formBox .rightSide .profileOverview .profile .item:last-child li a > span { width: 68% !important; }
+	
+	.formBox .rightSide .profileOverviewForm .modal-lg { width: 98% !important; }
+	.formBox .rightSide .profileOverviewForm .selectForm { top: 128px; left: 190px; }
+	.formBox .rightSide .profileOverviewForm .selectForm li a { font-size: 8px; }
+	.formBox .rightSide .profileOverviewForm .selectForm li .fa { font-size: 12px; right: -12px; }
+	.formBox .rightSide .profileOverviewForm .profile input { padding: 2px 4px 1px; font-size: 8px; }
+	.formBox .rightSide .profileOverviewForm .profile select { padding: 2px 2px 1px; font-size: 8px; }
+	.formBox .rightSide .profileOverviewForm .profile input#number { width: 60px; }
+	.formBox .rightSide .profileOverview .profile .item:nth-child(3) li .showMore li .fa-close { font-size: 8px; margin-right: 3px; }
+	.formBox .rightSide .profileOverviewForm .profile .item:last-child select { width: 44px; }
+	.formBox .rightSide .profileOverviewForm .profile .item:last-child span span input { width: 54px; }
+	.formBox .rightSide .profileOverviewForm .profile .item:last-child span span + small + span input { width: 24px; }
+	.formBox .rightSide .profileOverviewForm .profile li .fa-minus-square, .formBox .rightSide .profileOverviewForm .profile li .fa-plus-square { margin-top: 4px; }
+	.formBox .rightSide .profileOverview .profile .item:first-child li:last-child li .fa-envelope-o { margin: -12px -3px 0px 0px; font-size: 8px; }
+	
+	.formBox .rightSide .profileTab .tabNav ul li a { padding: 10px 7px; font-size: 9px; font-weight: 500; }
+	.formBox .rightSide .profileTab .leftCont .panel-heading a { padding: 6px 12px; font-size: 15px; }
+	.formBox .rightSide .profileTab .leftCont .panel-heading a span { font-size: 12px; }
+	.formBox .rightSide .profileTab .leftCont .panel-heading a .fa-refresh { font-size: 14px; }
+	.formBox .rightSide .profileTab .leftCont .panel-heading a::after { margin-top: -7px; font-size: 24px; right: 38px; }
+	.formBox .rightSide .profileTab .leftCont .panel-heading.active ul { right: 60px; }
+	.formBox .rightSide .profileTab .leftCont .panel-heading.active .modifies .fa { font-size: 16px; }
+	.formBox .rightSide .profileTab .leftCont .panel-heading.active .modifies .fa-plus-circle { margin: -4px -3px 0px 0px; font-size: 9px; }
+	
+	.formBox .rightSide .profileTab li a.clickThis::before { margin-left: -8px; width: 8px; font-size: 8px; }
+	.formBox .rightSide .profileTab .leftCont .panel-heading.active ul li ul { width: 100px; }
+	.formBox .rightSide .profileTab .leftCont .panel-heading.active ul li ul li a { padding: 0px 8px; font-size: 8px; }
+	.formBox .rightSide .profileTab .leftCont .grayBg li { font-size: 8px; }
+	.formBox .rightSide .profileTab .leftCont .tableLay { padding: 0px 12px; }
+	.formBox .rightSide .profileTab .leftCont .tableLay li { font-size: 8px; }
+	.formBox .rightSide .profileTab .leftCont .tableLay li a.fa-ellipsis-h { font-size: 14px; }
+	.formBox .rightSide .profileTab .leftCont .communication ul ul li { padding: 2px 3px 0px; }
+	.formBox .rightSide .profileTab .leftCont .communication > ul > li { font-size: 8px; }
+	.formBox .rightSide .profileTab .leftCont .communication .fa { font-size: 10px; }
+	.formBox .rightSide .profileTab .leftCont .communication ul ul li span { width: 11px; height: 11px; }
+	.formBox .rightSide .profileTab .leftCont .communication ul li:first-child li { font-weight: 500; }
+	.formBox .rightSide .profileTab .leftCont .communication ul ul li span.active::after { width: 9px; height: 5px; }
+	.formBox .rightSide .profileTab .leftCont .pappHead ul ul li { font-size: 8px; }
+	.formBox .rightSide .profileTab .leftCont .pappCont li { font-size: 8px; }
+	.formBox .rightSide .profileTab .leftCont li .switch input { font-size: 8px; }
+	.formBox .rightSide .profileTab .leftCont li .switch .round .fa { font-size: 16px; }
+	.formBox .rightSide .profileTab .leftCont .renewal > ul > li { padding: 3px 10px; }
+	.formBox .rightSide .profileTab .leftCont .renewal ul li:first-child li { font-size: 8px; }
+	.formBox .rightSide .profileTab .leftCont .renewal ul ul li { font-size: 8px; }
+	.formBox .rightSide .profileTab .leftCont .renewal ul ul li .fa { margin-right: 3px; font-size: 9px; }
+	.formBox .rightSide .profileTab .leftCont .renewal ul ul li .img { width: 25px; height: 25px; }
+	.formBox .rightSide .profileTab .leftCont .renewal select { font-size: 8px; }
+
+	.formBox .rightSide .profileTab .leftCont .samGroup .headUl li { font-size: 8px; }
+	.formBox .rightSide .profileTab .leftCont .samGroup .samCont > ul > li > a::before { font-size: 16px; margin-right: 5px; line-height: 10px; }
+	.formBox .rightSide .profileTab .leftCont .samGroup .samCont li > a { font-size: 8px; }
+	.formBox .rightSide .profileTab .leftCont .samGroup .samCont .fa.fa-toggle-on { font-size: 19px; }
+	.formBox .rightSide .profileTab .leftCont .samGroup .samCont li .img { width: 16px; height: 16px; font-size: 7px; line-height: 16px; }
+	
+	.formBox .rightSide .profileTab .rightCont .panel-heading a { padding: 7px 13px; font-size: 15px; }
+	.formBox .rightSide .profileTab .rightCont .panel-heading a span { font-size: 12px; }
+	.formBox .rightSide .profileTab .rightCont .panel-heading a .fa-refresh { font-size: 14px; }
+	.formBox .rightSide .profileTab .rightCont .panel-heading a::after { margin-top: -7px; font-size: 24px; right: 32px; }
+	.formBox .rightSide .profileTab .rightCont .rightContClose::after { font-size: 14px; top: 13px; right: 70px; }
+	.formBox .rightSide .profileTab .rightCont .progress { width: 50px; height: 50px; }
+	.formBox .rightSide .profileTab .rightCont .progress .progress-bar { border-width: 2px; }
+	.formBox .rightSide .profileTab .rightCont .progress .progress-value { font-size: 15px; line-height: 30px; }
+	.formBox .rightSide .profileTab .rightCont .item .total { padding: 0px 8px; float: none; display: inline-block; font-size: 8px; line-height: 16px; }
+	.formBox .rightSide .profileTab .rightCont .item .type { padding: 5px 0px 0px; width: 100%; font-size: 8px; }
+	.formBox .rightSide .profileTab .formGroup select { padding: 0px 20px 0px 10px; height: 30px; background-size: 12px; background-position: center right 8px; }
+	.formBox .rightSide .profileTab .formGroup input { height: 30px; }
+	.formBox .rightSide .profileTab .rightCont .toCome ul > li { font-size: 8px; }
+	
+	.formBox .profileTab .li-1 { width: 7%; }
+	.formBox .profileTab .li-15 { width: 18%; }
+	
+}
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1359px) {
+
+	html, body { font-size: 10px; }
+	input, select, textarea { font-size: 10px; }
+	h3 { font-size: 19px; }
+	h3 span { font-size: 16px; }
+	
+	h6 { font-size: 11px; }
+	
+	a.editBtn { font-size: 11px; line-height: 26px; }
+	a.addBtn { font-size: 11px; line-height: 26px; }
+	a.addBtn:before { margin-right: 6px; content:'\f055'; font-family: Fontawesome; font-size: 10px; display: inline-block; vertical-align: middle; }
+	a.whiteBtn { font-size: 11px; line-height: 26px; }
+	a.whiteBtn:before { font-size: 15px; }
+	a.blackBtn { font-size: 11px; line-height: 26px; }
+	a.blackBtn:before { font-size: 10px; }
+	.saveBtn { font-size: 11px; }
+	a.cancelBtn { font-size: 11px; }
+	a.editBtn { font-size: 11px; line-height: 26px; }
+	a.editBtn:before { font-size: 10px; }	
+	.deleteBtn { font-size: 11px; line-height: 26px; }
+	
+	.listBox .pagignation { font-size: 10px; height: 30px; line-height: 22px; }
+	.listBox .select { height: 30px; }
+	.userBox li a { font-size: 10px; }
+	.searchBox .search { height: 30px; }
+	
+	.searchBox .fa-cog { font-size: 16px; }
+	.searchBox .cogTabs .tab-pane li .text { font-size: 10px; }
+	.searchBox .cogTabs .tab-pane li label { font-size: 10px; }
+	.searchBox .cogTabs .tab-pane li label span { width: 9px; height: 9px; }
+	.searchBox .cogTabs .tab-pane li label span::after { width: 9px; height: 5px; bottom: 3px; left: 2px; }
+	.searchBox .cogTabs .tab-pane li .number { font-size: 10px; }
+	
+	.modal-content { padding: 0px 0px 15px; }
+	
+	
+	.formBox .leftSide .blueBg li a { padding: 20px 12px 15px; }
+	.formBox .leftSide .blueBg li a i { font-size: 14px; }
+	.formBox .leftSide.active .blueBg li a em { width: 16px; height: 16px; line-height: 16px; font-size: 8px; }
+	.formBox .rightSide { padding-left: 15px; }
+	.formBox .rightSide .profileOverview .titles { padding: 7px 15px; }
+	.formBox .rightSide .profileOverview .titles h3 { margin: 7px 0px; }
+	.formBox .rightSide .profileOverview .img { width: 35px; height: 35px; }
+	.formBox .rightSide .profileOverview .img .fa { width: 18px; height: 18px; font-size: 9px; line-height: 18px; }
+	.formBox .rightSide .profileOverview .top { padding: 10px 10px 5px; }
+	.formBox .rightSide .profileOverview .top a.fa-heart { width: 29px; height: 29px; line-height: 27px; font-size: 14px; }
+	
+	.formBox .rightSide .profileOverview .top .topCol ul li ul li a { font-size: 10px; }
+	.formBox .rightSide .profileOverview .profile li { padding: 4px 5px 4px 10px !important; }
+	.formBox .rightSide .profileOverview .profile li a { font-size: 8px !important; line-height: 12px !important; }
+	.formBox .rightSide .profileOverview .profile li a strong { width: 49% !important; font-size: 9px !important; }
+	.formBox .rightSide .profileOverview .profile li a > span { width: 51% !important; }
+	.formBox .rightSide .profileOverview .profile li a.clickMore strong::before { font-size: 11px; width: 10px; margin-left: -10px; }
+	.formBox .rightSide .profileOverview .profile li em { font-size: 7px; }
+	.formBox .rightSide .profileOverview .profile li .fa-minus-square { width: 11px; font-size: 9px; }
+	.formBox .rightSide .profileOverview .profile li .fa-plus-square { width: 11px; font-size: 9px; }
+	
+	.formBox .rightSide .profileOverview .profile .item:first-child li a strong { width: 31% !important; }
+	.formBox .rightSide .profileOverview .profile .item:first-child li a.clickMore + .showMore strong { width: 30% !important; }
+	.formBox .rightSide .profileOverview .profile .item:first-child li a > span { width: 68% !important; }
+	
+	.formBox .rightSide .profileOverview .profile .item:last-child li a strong { width: 34% !important; }
+	.formBox .rightSide .profileOverview .profile .item:last-child li a > span { width: 66% !important; }
+	
+	.formBox .rightSide .profileOverviewForm .modal-lg { width: 98% !important; }
+	.formBox .rightSide .profileOverviewForm .selectForm { top: 135px; left: 210px; }
+	.formBox .rightSide .profileOverviewForm .selectForm li a { font-size: 8px; }
+	.formBox .rightSide .profileOverviewForm .selectForm li .fa { font-size: 12px; right: -12px; }
+	.formBox .rightSide .profileOverviewForm .profile input { padding: 2px 4px 1px; font-size: 8px; }
+	.formBox .rightSide .profileOverviewForm .profile select { padding: 2px 2px 1px; font-size: 8px; }
+	.formBox .rightSide .profileOverviewForm .profile input#number { width: 60px; }
+	.formBox .rightSide .profileOverview .profile .item:nth-child(3) li .showMore li .fa-close { font-size: 8px; margin-right: 3px; }
+	.formBox .rightSide .profileOverviewForm .profile .item:last-child select { width: 44px; }
+	.formBox .rightSide .profileOverviewForm .profile .item:last-child span span input { width: 54px; }
+	.formBox .rightSide .profileOverviewForm .profile .item:last-child span span + small + span input { width: 24px; }
+	.formBox .rightSide .profileOverviewForm .profile li .fa-minus-square, .formBox .rightSide .profileOverviewForm .profile li .fa-plus-square { margin-top: 4px; }
+	.formBox .rightSide .profileOverview .profile .item:first-child li:last-child li .fa-envelope-o { margin: -12px -3px 0px 0px; font-size: 8px; }
+	
+	.formBox .rightSide .profileTab .tabNav ul li a { padding: 10px 7px; font-size: 10px; font-weight: 500; }
+	.formBox .rightSide .profileTab .leftCont .panel-heading a { padding: 6px 13px; font-size: 17px; }
+	.formBox .rightSide .profileTab .leftCont .panel-heading a span { font-size: 14px; }
+	.formBox .rightSide .profileTab .leftCont .panel-heading a .fa-refresh { font-size: 14px; }
+	.formBox .rightSide .profileTab .leftCont .panel-heading a::after { margin-top: -7px; font-size: 24px; right: 38px; }
+	.formBox .rightSide .profileTab .leftCont .panel-heading.active ul { right: 60px; }
+	.formBox .rightSide .profileTab .leftCont .panel-heading.active .modifies .fa { font-size: 16px; }
+	.formBox .rightSide .profileTab .leftCont .panel-heading.active .modifies .fa-plus-circle { margin: -4px -3px 0px 0px; font-size: 10px; }
+	
+	.formBox .rightSide .profileTab .leftCont .panel-heading.active ul li ul { width: 100px; }
+	.formBox .rightSide .profileTab .leftCont .panel-heading.active ul li ul li a { padding: 0px 8px; font-size: 9px; }
+	.formBox .rightSide .profileTab .leftCont .grayBg li { font-size: 9px; }
+	.formBox .rightSide .profileTab .leftCont .tableLay li { font-size: 8px; }
+	.formBox .rightSide .profileTab .leftCont .tableLay li a.fa-ellipsis-h { font-size: 14px; }
+	.formBox .rightSide .profileTab .leftCont .communication > ul > li { font-size: 8px; }
+	.formBox .rightSide .profileTab .leftCont .communication .fa { font-size: 11px; }
+	.formBox .rightSide .profileTab .leftCont .communication ul ul li span { width: 11px; height: 11px; }
+	.formBox .rightSide .profileTab .leftCont .communication ul ul li span.active::after { width: 9px; height: 5px; }
+	.formBox .rightSide .profileTab .leftCont .pappHead ul ul li { font-size: 9px; }
+	.formBox .rightSide .profileTab .leftCont .pappCont li { font-size: 9px; }
+	.formBox .rightSide .profileTab .leftCont li .switch input { font-size: 9px; }
+	.formBox .rightSide .profileTab .leftCont li .switch .round .fa { font-size: 19px; }
+	.formBox .rightSide .profileTab .leftCont .renewal ul li:first-child li { font-size: 9px; }
+	.formBox .rightSide .profileTab .leftCont .renewal ul ul li { font-size: 9px; }
+	.formBox .rightSide .profileTab .leftCont .renewal ul ul li .fa { margin-right: 4px; font-size: 11px; }
+	.formBox .rightSide .profileTab .leftCont .renewal ul ul li .img { width: 25px; height: 25px; }
+	.formBox .rightSide .profileTab .leftCont .renewal select { font-size: 9px; }
+	.formBox .rightSide .profileTab .leftCont .samGroup .headUl li { font-size: 9px; }
+	.formBox .rightSide .profileTab .leftCont .samGroup .samCont li > a { font-size: 9px; }
+	.formBox .rightSide .profileTab .leftCont .samGroup .samCont .fa.fa-toggle-on { font-size: 19px; }
+	.formBox .rightSide .profileTab .leftCont .samGroup .samCont li .img { width: 16px; height: 16px; font-size: 7px; line-height: 16px; }
+	
+	.formBox .rightSide .profileTab .rightCont .panel-heading a { padding: 7px 13px; font-size: 17px; }
+	.formBox .rightSide .profileTab .rightCont .panel-heading a span { font-size: 14px; }
+	.formBox .rightSide .profileTab .rightCont .panel-heading a .fa-refresh { font-size: 14px; }
+	.formBox .rightSide .profileTab .rightCont .panel-heading a::after { margin-top: -7px; font-size: 24px; right: 32px; }
+	.formBox .rightSide .profileTab .rightCont .rightContClose::after { font-size: 14px; top: 13px; right: 70px; }
+	.formBox .rightSide .profileTab .rightCont .progress { width: 70px; height: 70px; }
+	.formBox .rightSide .profileTab .rightCont .progress .progress-value { font-size: 15px; line-height: 30px; }
+	.formBox .rightSide .profileTab .rightCont .item .total { font-size: 8px; padding: 0px 6px; line-height: 15px; }
+	.formBox .rightSide .profileTab .rightCont .item .type { font-size: 8px; }
+	.formBox .rightSide .profileTab .formGroup select { padding: 0px 20px 0px 10px; height: 30px; background-size: 12px; background-position: center right 8px; }
+	.formBox .rightSide .profileTab .formGroup input { height: 30px; }
+	.formBox .rightSide .profileTab .rightCont .toCome ul > li { font-size: 9px; }
+		
+	
+}
+
+@media only screen and (min-width: 1360px) and (max-width: 1419px) {
+	body { font-size: 11px; }
+	h6 { font-size: 13px; }
+	
+	a.editBtn { font-size: 11px; line-height: 26px; }
+	a.addBtn { font-size: 11px; line-height: 26px; }
+	a.addBtn:before { margin-right: 6px; content:'\f00e'; font-family: Fontawesome; font-size: 10px; display: inline-block; vertical-align: middle; }
+	a.whiteBtn { font-size: 11px; line-height: 26px; }
+	a.whiteBtn:before { font-size: 15px; }
+	a.blackBtn { font-size: 11px; line-height: 26px; }
+	a.blackBtn:before { font-size: 10px; }
+	.saveBtn { font-size: 11px; }
+	a.cancelBtn { font-size: 11px; }
+	a.editBtn { font-size: 11px; line-height: 26px; }
+	a.editBtn:before { font-size: 10px; }	
+	.deleteBtn { font-size: 11px; line-height: 26px; }
+	
+	.logoBox { width: 14%; }
+	
+	.searchBox { width: 28%; }
+	.searchBox .search { width: 91%; font-size: 12px; }
+	
+	.listBox .select { width: 53.7%; font-size: 12px; }
+	.listBox .pagignation { font-size: 12px; }
+	
+	.userBox li a { font-size: 12px; }
+	
+	.formBox .leftSide { font-size: 11px; }
+	.formBox .leftSide .blueBg li a i { font-size: 13px; }
+	.formBox .leftSide.active .blueBg li a em { width: 14px; height: 14px; line-height: 14px; font-size: 9px; }
+	
+	.formBox .leftSide.active { width: 13.5%; }
+	.formBox .rightSide.active { width: 100%; }
+	.formBox .rightSide { padding-left: 20px; }
+	
+	.formBox .leftSide .leftToggle:after { margin-right: 14px; }
+	.formBox .leftSide .blueBg li a { padding: 24px 14px; }
+	
+	.formBox .rightSide .profileOverview .top .topCol ul li ul li a { font-size: 10px; }
+	.formBox .rightSide .profileOverview .top { padding: 20px 15px 10px; }
+	.formBox .rightSide .profileOverview .titles h3 { margin: 7px 0px 5px; }
+	.formBox .rightSide .profileOverview .img { width: 36px; height: 36px; }
+	
+	.formBox .rightSide .profileOverview .top a.fa-heart { width: 32px; height: 32px; font-size: 15px; }
+	.formBox .rightSide .profileOverview .top .topCol { width: 30.4%; }
+	.formBox .rightSide.active .profileOverview .top .topCol { width: 32.4%; }
+	
+	.formBox .rightSide .profileOverview .profile .item { width: 19.5%; }
+	.formBox .rightSide .profileOverview .profile .item:first-child { width: 34%; }
+	.formBox .rightSide .profileOverview .profile .item:last-child { width: 27%; }
+	
+	.formBox .rightSide .profileOverview .profile li { padding: 3px 5px 3px 10px; }
+	.formBox .rightSide .profileOverview .profile li a { padding-top: 0px; font-size: 8px !important; line-height: 13px; }
+	.formBox .rightSide .profileOverview .profile li em { margin-top: 6px; font-size: 8px; }
+	.formBox .rightSide .profileOverview .profile li a strong { width: 48% !important; font-size: 9px !important; font-weight: 600; }
+	.formBox .rightSide .profileOverview .profile li a span { width: 52% !important; }
+	.formBox .rightSide .profileOverview .profile li a strong:before { margin-left: -10px !important; width: 10px!important; font-size: 13px !important; font-weight: 400; }
+	.formBox .rightSide .profileOverview .profile .item:first-child li a strong { width: 30%  !important; }
+	.formBox .rightSide .profileOverview .profile .item:first-child li a.clickMore + .showMore strong { width: 30%  !important; }
+	.formBox .rightSide.active .profileOverview .profile .item:last-child li .showMore { margin-left: -3%; width: 105%; }
+	.formBox .rightSide .profileOverview .profile .item:first-child li:last-child li .fa-envelope-o { margin-top: -10px; font-size: 9px; }
+	.formBox .rightSide .profileOverview .profile .item:last-child li a strong { width: 29% !important; }
+	.formBox .rightSide .profileOverview .profile .item:last-child li a span { width: 70% !important; }
+	.formBox .rightSide .profileOverview .profile .item:last-child li a span span { width: auto !important; }
+	.formBox .rightSide .profileOverview .profile .item:last-child .showMore li strong { width: 28% !important; }
+	
+	.formBox .rightSide .profileOverview .profile li .showMore { margin-left: -2.7%; width: 104.2%; } 
+	.formBox .rightSide .profileOverview .profile li .fa-minus-square { font-size: 9px; }
+	.formBox .rightSide .profileOverview .profile li .fa-plus-square { font-size: 9px; }
+	
+	.formBox .rightSide .profileOverviewForm .selectForm { top: 157px; left: 250px; }
+	.formBox .rightSide .profileOverviewForm .selectForm li a { font-size: 9px; }
+	.formBox .rightSide .profileOverviewForm .selectForm li .fa { font-size: 12px; top: 1px; right: -18px; }
+	.formBox .rightSide .profileOverviewForm .profile input { padding: 2px 4px 1px; font-size: 8px; }
+	.formBox .rightSide .profileOverviewForm .profile input, .formBox .rightSide .profileOverviewForm .profile select { font-size: 8px; }
+	.formBox .rightSide .profileOverviewForm .form .item strong { line-height: 17px; } 
+	.formBox .rightSide .profileOverviewForm .profile .item li a { line-height: 13px; }
+	.formBox .rightSide .profileOverviewForm .profile .item:first-child li a strong { width: 25% !important; }
+	.formBox .rightSide .profileOverviewForm .profile .item:first-child li a span { width: 55% !important; }
+	.formBox .rightSide .profileOverviewForm .profile .item:first-child li a.clickMore + .showMore strong { width: 24%  !important; }
+
+	.formBox .rightSide .profileOverviewForm .profile .item:last-child span span input { width: 63px; }
+	.formBox .rightSide .profileOverviewForm .profile .item:last-child select { width: 44px; } 
+	.formBox .rightSide .profileOverviewForm .profile .item:last-child span span + small + span input { width: 25px; }
+	.formBox .rightSide .profileOverviewForm .profile .item:nth-child(3) li .showMore li .fa-close { font-size: 8px; }
+	.formBox .rightSide .profileOverviewForm .profile li .fa-minus-square, .formBox .rightSide .profileOverviewForm .profile li .fa-plus-square { margin-top: 4px; font-size: 9px; }
+	
+	
+	.formBox .rightSide .profileTab .tabNav { padding: 14px 0px; }
+	.formBox .rightSide .profileTab .tabNav ul li a { font-size: 11px !important; }
+	
+	.formBox .rightSide .profileTab .leftCont .panel-heading a { font-size: 19px !important; }
+	.formBox .rightSide .profileTab .leftCont .panel-heading .fa-spinner.record { margin-top: 4px; font-size: 16px !important; }
+	.formBox .rightSide .profileTab .leftCont .panel-heading span { font-size: 16px !important; }
+	.formBox .rightSide .profileTab .leftCont .panel-heading a .fa-refresh { font-size: 15px; }
+	.formBox .rightSide .profileTab .leftCont .panel-heading a::after { font-size: 26px; margin-top: -8px; }
+	.formBox .rightSide .profileTab .leftCont .panel-heading.active .modifies .fa { font-size: 18px; }
+	.formBox .rightSide .profileTab .leftCont .panel-heading.active .modifies .fa-plus-circle { font-size: 10px; }
+	.formBox .rightSide .profileTab .leftCont .panel-heading.active ul { right: 68px; }
+	.formBox .rightSide .profileTab .leftCont .panel-heading.active ul li ul li a { font-size: 10px !important; }
+	
+	.formBox .rightSide .profileTab .rightCont .panel-heading a { font-size: 19px !important; }
+	.formBox .rightSide .profileTab .rightCont .panel-heading span { font-size: 16px !important; }
+	.formBox .rightSide .profileTab .rightCont .panel-heading a .fa-refresh { font-size: 13px; }
+	.formBox .rightSide .profileTab .rightCont .panel-heading a::after { margin-top: -7px; font-size: 22px; }
+	.formBox .rightSide .profileTab .rightCont .rightContClose::after { top: 18px; font-size: 15px; }
+	
+	.formBox .rightSide .profileTab .leftCont .grayBg li { font-size: 9px; }
+	.formBox .rightSide .profileTab .leftCont .tableLay li { font-size: 9px; }
+	.formBox .rightSide .profileTab .leftCont .tableLay li a.fa-ellipsis-h { font-size: 15px; font-weight: 400; }
+	
+	.formBox .rightSide .profileTab .rightCont .item .total { padding: 2px 11px; float: left; border-radius: 8px; font-size: 9px; }
+	.formBox .rightSide .profileTab .rightCont .item .type { font-size: 9px; line-height: 18px; }
+	
+	.formBox .rightSide .profileTab .rightCont .toCome ul > li { font-size: 9px; }
+	
+	.formBox .rightSide .profileTab .leftCont .communication > ul > li { font-size: 9px; }
+	.formBox .rightSide .profileTab .leftCont .communication .addCommunications select { font-size: 10px; }
+	.formBox .rightSide .profileTab .leftCont .pappCont li { font-size: 9px; }
+	.formBox .rightSide .profileTab .leftCont .pappHead ul ul li { font-size: 9px; }
+	.formBox .rightSide .profileTab .leftCont li .switch input { padding: 6px 8px 5px; font-size: 9px; }
+	.formBox .rightSide .profileTab .leftCont .renewal ul ul li:first-child { width: 10%; }
+	.formBox .rightSide .profileTab .leftCont .renewal ul li:first-child li { font-size: 9px; }
+	.formBox .rightSide .profileTab .leftCont .renewal ul ul li { font-size: 9px; }
+	.formBox .rightSide .profileTab .leftCont .renewal ul ul li .fa { font-size: 12px; }
+	.formBox .rightSide .profileTab .leftCont .renewal ul ul li .img { width: 26px; height: 26px; }
+	.formBox .rightSide .profileTab .leftCont .samGroup .headUl li  { font-size: 9px; }
+	.formBox .rightSide .profileTab .leftCont .samGroup .samCont li > a { font-size: 9px; }
+	.formBox .rightSide .profileTab .leftCont .samGroup .samCont .fa.fa-toggle-on { font-size: 20px; }
+	
+}
+@media only screen and (min-width: 1420px) and (max-width: 1600px) {	
+	
+	h6 { font-size: 14px; }
+	
+	a.editBtn { font-size: 11px; }
+	a.addBtn { font-size: 11px; }
+	a.addBtn:before { margin-right: 6px; content:'\f055'; font-family: Fontawesome; font-size: 10px; display: inline-block; vertical-align: middle; }
+	a.whiteBtn { font-size: 11px; }
+	a.whiteBtn:before { font-size: 15px; }
+	a.blackBtn { font-size: 11px; }
+	a.blackBtn:before { font-size: 10px; }
+	.saveBtn { font-size: 11px; }
+	a.cancelBtn { font-size: 11px; }
+	a.editBtn { font-size: 11px; }
+	a.editBtn:before { font-size: 10px; }	
+	.deleteBtn { font-size: 11px; }
+	
+	.searchBox .search { width: 88.5%; }
+	
+	.formBox .leftSide .blueBg li a { font-size: 13px; }
+	.formBox .leftSide .blueBg li a i { font-size: 15px; }
+	
+	.formBox .rightSide .profileOverview .img { width: 33px; height: 33px; }
+	.formBox .rightSide .profileOverview .img .fa { width: 16px; height: 16px; font-size: 8px; }
+	.formBox .rightSide .profileOverview .top { padding: 10px 15px 3px; }
+	.formBox .rightSide .profileOverview .top .topCol ul li ul li a { font-size: 11px; }
+	
+	.formBox .rightSide .profileOverview .profile li { padding: 5px 5px 5px 12px; } 
+	.formBox .rightSide .profileOverview .profile li a { font-size: 10px; }
+	.formBox .rightSide .profileOverview .profile li a strong { width: 42%; font-size: 11px; }
+	.formBox .rightSide .profileOverview .profile li a span { width: 58%; }
+	.formBox .rightSide .profileOverview .profile li a strong:before { margin-left: -12px !important; width: 12px !important; font-size: 14px; font-weight: 400; }
+	.formBox .rightSide .profileOverview .profile .item:first-child li a strong { width: 30%; }
+	.formBox .rightSide .profileOverview .profile .item:first-child li a span { width: 70%; }
+	.formBox .rightSide .profileOverview .profile .item:first-child li a.clickMore + .showMore strong { width: 30% !important; }
+	.formBox .rightSide .profileOverview .profile .item:first-child li a.clickMore + .showMore span { width: 70% !important; }
+	.formBox .rightSide .profileOverview .profile .item:first-child li:last-child li .fa-envelope-o { margin-top: -12px; font-size: 10px; }
+	
+	.formBox .rightSide.active .profileOverview .profile li a { font-size: 9px; }
+	.formBox .rightSide.active .profileOverview .profile li a strong { width: 39%; font-size: 10px; }
+	.formBox .rightSide.active .profileOverview .profile .item:last-child li a { width: 84%; }
+	.formBox .rightSide.active .profileOverview .profile .item:last-child li a strong { width: 32%; }
+	.formBox .rightSide.active .profileOverview .profile .item:last-child li a span { width: 68%; }
+	.formBox .rightSide .profileOverview .profile li em { font-size: 10px; }
+
+	.formBox .rightSide .profileTab .tabNav { padding: 14px 0px; }
+	.formBox .rightSide .profileTab .leftCont .panel-heading a { font-size: 19px !important; }
+	.formBox .rightSide .profileTab .leftCont .panel-heading .fa-spinner.record { margin-top: 4px; font-size: 16px !important; }
+	.formBox .rightSide .profileTab .leftCont .panel-heading span { font-size: 16px !important; }
+	.formBox .rightSide .profileTab .leftCont .panel-heading a .fa-refresh { font-size: 15px; }
+	.formBox .rightSide .profileTab .leftCont .panel-heading a::after { font-size: 26px; margin-top: -8px; }
+	.formBox .rightSide .profileTab .leftCont .panel-heading.active .modifies .fa { font-size: 18px; }
+	.formBox .rightSide .profileTab .leftCont .panel-heading.active .modifies .fa-plus-circle { font-size: 10px; }
+	.formBox .rightSide .profileTab .leftCont .panel-heading.active ul { right: 68px; }
+	.formBox .rightSide .profileTab .leftCont .panel-heading.active ul li ul li a { font-size: 10px !important; }
+
+	.formBox .rightSide .profileTab .tabNav ul li a { font-size: 13px !important; }
+	
+	.formBox .rightSide .profileTab .leftCont .grayBg.tableLay li { font-size: 10px; }
+	.formBox .rightSide .profileTab .leftCont .tableLay li { font-size: 10px; }
+	
+	.formBox .rightSide .profileTab .leftCont .communication > ul > li { font-size: 10px; }
+	.formBox .rightSide .profileTab .leftCont .samGroup .headUl li { font-size: 10px; }
+	.formBox .rightSide .profileTab .leftCont .samGroup .samCont li > a { font-size: 10px; }
+	
+	.formBox .rightSide .profileTab .leftCont .pappHead ul ul li { font-size: 10px; }
+	.formBox .rightSide .profileTab .leftCont .pappCont li { font-size: 10px; }
+	.formBox .rightSide .profileTab .leftCont li .switch input { padding: 6px 8px 4.5px; font-size: 10px; }
+	.formBox .rightSide .profileTab .leftCont .renewal ul li:first-child li { font-size: 10px; }
+	.formBox .rightSide .profileTab .leftCont .renewal ul ul li { font-size: 10px; }
+	
+	.formBox .rightSide .profileTab .rightCont .panel-heading a { font-size: 19px !important; }
+	.formBox .rightSide .profileTab .rightCont .panel-heading span { font-size: 16px !important; }
+	.formBox .rightSide .profileTab .rightCont .panel-heading a .fa-refresh { font-size: 13px; }
+	.formBox .rightSide .profileTab .rightCont .panel-heading a::after { margin-top: -7px; font-size: 22px; }
+	.formBox .rightSide .profileTab .rightCont .rightContClose::after { top: 18px; font-size: 15px; }
+	
+	.formBox .rightSide .profileOverviewForm .selectForm { top: 138px; left: 275px; }
+	.formBox .rightSide .profileOverviewForm .selectForm li a { font-size: 9px; }
+	.formBox .rightSide .profileOverviewForm .selectForm li .fa { font-size: 16px; top: 3px; right: -24px; }
+	.formBox .rightSide .profileOverviewForm .profile input, .formBox .rightSide .profileOverviewForm .profile select { font-size: 9px; }
+	.formBox .rightSide .profileOverviewForm .form .item strong { line-height: 17px; } 
+	.formBox .rightSide .profileOverviewForm .profile .item:last-child span span input { width: 70px; }
+	.formBox .rightSide .profileOverviewForm .profile .item:last-child select { width: 52px; } 
+	.formBox .rightSide .profileOverviewForm .profile .item:last-child span span + small + span input { width: 28px; }
+	
+	
+	
+}
+
+
