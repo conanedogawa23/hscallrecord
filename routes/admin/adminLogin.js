@@ -9,8 +9,8 @@ const comparePwd = (pass, authPwd)=> {
 const adminSignin = (req, res, next)=> {
     const connectsql = mysql.createConnection({
         host: "localhost",
-        user: "phpmyadmin",
-        password: "mysql",
+        user: "root",
+        password: "",
         database: "mycalldb"
     });
 

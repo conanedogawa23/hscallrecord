@@ -1,8 +1,13 @@
 <div>
     <md-button type="btn btn-sm" class="md-warn md-hue-2 md-raised" ng-click="receive.requestDataApi()">Get Data</md-button>
+    <div ng-if="receive.status">
+            <!-- <audio controls>
+                <source ng-src="{{srcUrl}}">
+            </audio> -->
+        <h1>testing</h1>
+        <audio controls="controls" ng-src="{{srcUrl}}" autoplay>
+            This text displays if the audio tag isn't supported.
+        </audio>
+    </div>
 </div>
-<div>
-    <audio controls>
-        <source src="{{ srcData }}" type="audio/mpeg">
-    </audio>
-</div>
+

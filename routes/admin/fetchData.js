@@ -1,3 +1,4 @@
+
 const mysql = require('mysql'),
     multer = require('multer'),
     fs = require('fs'),
@@ -8,8 +9,8 @@ const getData = (req, res, next)=> {
 
     const connectFetchData = mysql.createConnection({
         host: "localhost",
-        user: "phpmyadmin",
-        password: "mysql",
+        user: "root",
+        password: "",
         database: "mycalldb"
     });
 
@@ -28,12 +29,12 @@ const getData = (req, res, next)=> {
             let time = moment(req.body.time).format('YYYY-MM-DD HH:mm:ss');
             console.log(time);
             try {
-                fs.writeFileSync(__dirname+`/audio/${req.files.files.name}`);
+                fs.writeFileSync(`/hewettsoft/hscallrecord/public/app/views/images/${req.files.files.name}`);
             } catch(err) {
                 console.log(err);
             }          
             
-            let path = __dirname+`/audio/${req.files.files.name}`;
+            let path = `/hewettsoft/hscallrecord/public/app/views/images/${req.files.files.name}`;
             console.log(path);
 
             duration(req.files.files.data, function (err, duration) {
@@ -81,9 +82,9 @@ const getData = (req, res, next)=> {
                         });
                     } else {
                         console.log(result);
-                        res.send(200).status({
+                        res.sendStatus(200).status({
                             success: true,
-                            message: "data sent"
+                            message: "data sent",
                         });
                     }
                     

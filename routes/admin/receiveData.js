@@ -1,4 +1,5 @@
-const mysql = require('mysql');
+const mysql = require('mysql'),
+    fs = require('fs');
 
 const retrieveData = (req, res, next)=> {
     let connectFetchData = mysql.createConnection({
@@ -19,12 +20,27 @@ const retrieveData = (req, res, next)=> {
             if (err) {
                 console.log(err);
             } else {
-                console.log(result);
-                res.status(200).send({
-                    message: 'successful',
-                    success: true,
-                    data: result
-                });
+                let file = __dirname+`/audio/Kalimba.mp3`;
+                console.log(file);
+                try{
+                    function base64_encode(file) {
+                        // read binary data
+                        var bitmap = fs.readFileSync(file, (err, data)=> {
+                            if(err) console.log(err);
+                        });
+                        // convert binary data to base64 encoded string
+                        return new Buffer(bitmap).toString('base64');
+                    }
+                    
+                    console.log(base64_encode(file));
+                    // res.status(200).send({
+                    //     message: 'successful',
+                    //     success: true,
+                    //     data: base
+                    // });  
+                } catch(er){
+                    console.log(er);
+                }
             }
         });
     });
