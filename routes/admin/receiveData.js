@@ -20,24 +20,17 @@ const retrieveData = (req, res, next)=> {
             if (err) {
                 console.log(err);
             } else {
-                let file = __dirname+`/Kalimba.mp3`;
-                console.log(file);
-                try{
-                    function base64_encode(file) {
-                        // read binary data
-                        var bitmap = fs.readFile(file, {encoding: 'base64'}, (err, data)=> {
-                            if(err) console.log(err);
-                        });
-                        // convert binary data to base64 encoded string
-                        return bitmap;
-                    }
-                    
-                    console.log(base64_encode(file));
-                    // res.status(200).send({
-                    //     message: 'successful',
-                    //     success: true,
-                    //     data: base
-                    // });  
+                let base = [];
+                try {
+                    for (let index = 0; index < result.length; index++) {
+                        let file = fs.readFileSync(result[index].audiopath);
+                        base[index] = file.toString('base64');
+                    }            
+                    res.status(200).send({
+                        message: 'successful',
+                        success: true,
+                        data: base
+                    });  
                 } catch(er){
                     console.log(er);
                 }
