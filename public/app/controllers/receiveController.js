@@ -6,11 +6,12 @@ angular.module('receiveCtrl', ['receiveService'])
         console.log('in receive controller');
         vm.location = 'hyderabad';
         vm.status = false;
+        $scope.srcData = "/app/views/images/Kalimba.mp3";
+        console.log($scope.srcData);
         vm.requestDataApi = ()=>{
             console.log("in requestDataAPi");
             receivedata.getData(vm.location).then((data)=> {
-                vm.srcData = data[0].audiopath;
-                console.log(vm.srcData);
+                console.log(data);
                 vm.status = true;
             }).catch((err)=> {
                 console.log(err);
