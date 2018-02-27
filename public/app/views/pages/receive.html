@@ -1,14 +1,59 @@
 <div>
     <md-button type="btn btn-sm" class="md-warn md-hue-2 md-raised" ng-click="receive.requestDataApi()">Get Data</md-button>
-    <div ng-if="receive.status">
+    <div>
             <!-- <audio controls>
                 <source ng-src="{{srcUrl}}">
             </audio> -->
         <h1>testing</h1>
-        <audio controls="controls">
+        <!-- <audio controls="controls">
             <source ng-src="{{srcUrl}}">
             This text displays if the audio tag isn't supported.
-        </audio>
+        </audio> -->
     </div>
 </div>
-
+<div ng-if="receive.status">
+    <table>
+        <thead>
+            <tr>
+                <th>Index</th>
+                <th>Conversations</th>
+                <th>Customer Number</th>
+                <th>Date/Time</th>
+                <th>Location</th>
+                <th>IMEI</th>
+                <th>Duration</th>
+                <th>Executive Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="x in srcUrl" track by $index>
+                <td>
+                    {{$index+1}}
+                </td>
+                <td>
+                    <audio controls>
+                        <source ng-src="{{x}}">
+                    </audio>
+                </td>
+                <td>
+                    {{values[$index].customernumber}}
+                </td>
+                <td>
+                    {{values[$index].created_at | date:'yyyy-MM-dd HH:mm:ss'}}
+                </td>
+                <td>
+                    {{values[$index].location}}
+                </td>
+                <td>
+                    {{values[$index].imeicode}}
+                </td>
+                <td>
+                    {{values[$index].durationcall}}
+                </td>
+                <td>
+                    {{values[$index].executivenumber}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -22,14 +22,23 @@ const retrieveData = (req, res, next)=> {
             } else {
                 let base = [];
                 try {
+                    let information = {};
+                    // console.log(result);
+                    // result.forEach(result, (key, value) => {
+                    //     console.log(key, value);
+                    // });
                     for (let index = 0; index < result.length; index++) {
                         let file = fs.readFileSync(result[index].audiopath);
                         base[index] = file.toString('base64');
-                    }            
+                    }
+                    information['data'] = base;
+                    information['details']= result;
+                    // res.send(object);
+                    //            
                     res.status(200).send({
                         message: 'successful',
                         success: true,
-                        data: base
+                        data: information
                     });  
                 } catch(er){
                     console.log(er);
