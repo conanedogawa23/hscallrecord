@@ -1,12 +1,12 @@
 const express = require('express'),
   path = require('path'),
-  favicon = require('serve-favicon'),
+  // favicon = require('serve-favicon'),
   logger = require('morgan'),
   cookieParser = require('cookie-parser'),
   bodyParser = require('body-parser'),
   app = express(),
   mysql = require('mysql'),
-  multer = require('multer'),
+  // multer = require('multer'),
   busboyBodyParser = require('busboy-body-parser'),
   cors = require('cors');
 
