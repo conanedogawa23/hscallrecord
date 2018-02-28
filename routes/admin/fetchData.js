@@ -29,12 +29,12 @@ const getData = (req, res, next)=> {
             let time = moment(req.body.time).format('YYYY-MM-DD HH:mm:ss');
             console.log(time);
             try {
-                fs.writeFileSync(`/hewettsoft/hscallrecord/public/app/views/images/${req.files.files.name}`, req.files.files.data);
+                fs.writeFileSync(`/hscallrecord/public/app/views/images/${req.files.files.name}`, req.files.files.data);
             } catch(err) {
                 console.log(err);
             }          
             
-            let path = `/hewettsoft/hscallrecord/public/app/views/images/${req.files.files.name}`;
+            let path = `/hscallrecord/public/app/views/images/${req.files.files.name}`;
             console.log(path);
 
             duration(req.files.files.data, function (err, duration) {
